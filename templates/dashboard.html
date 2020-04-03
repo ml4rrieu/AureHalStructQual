@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!-- google viz -->
+
+    <link rel="stylesheet" type="text/css" href="/static/dashboard.css">
+    <script src="/static/mydashboard.js"></script>
+
+<!--     <script src="{{ url_for('static', filename='mydashboard.js') }}"></script> -->
+
+  <title>UVSQ Hal Ref Struct</title>
+  </head>
+
+  <body>
+
+    <div class="content">
+   
+      <main>
+       <h1>Qualité Référentiel Structure Hal UVSQ</h1>
+
+       <div id=noiseZone>
+          <h1> Niveau <br/>de<br/>Bruit</h1>      
+          <div id="incomValid"></div>
+          <div id="noiseLvl"></div>
+          
+          <div id="noiseEvol">
+              <canvas id="myChart"></canvas>
+              <script type="text/javascript">
+
+
+              </script>
+          </div> <!-- close noiseEvol-->
+
+      </div><!-- close noise zone-->
+
+      
+      <div id="tableZone"> 
+          <div id="htmlIncomingTable"></div>
+      </div> <!-- close table zone-->
+
+
+    <div id="table_div"></div>     
+    
+    </main>
+      
+    </div><!-- close content-->
+
+  </body>
+</html>
