@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, jsonify, make_response
+from flask import Flask, render_template
 import json, requests
 from functions import *
 
@@ -19,7 +19,8 @@ def calcNoiseLevel():
     noiseLvl = round( incoming/valid * 100, 1)
 
     out = {
-    'incoming':incoming, 'valid': valid, 'noiseLvl':noiseLvl}
+    'incoming':incoming, 'valid': valid, 'noiseLvl':noiseLvl
+    }
 
     return out
     

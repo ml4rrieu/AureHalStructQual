@@ -1,9 +1,11 @@
 import requests, json
 
+myStructId = 81173
+
 def reqRefStruct(state, fl='') : 
-    iduvsq = 81173
+    
     url = 'https://api.archives-ouvertes.fr/ref/structure/?rows=1000&wt=json\
-    &q=parentDocid_i:81173&fq=valid_s:'+state+fl
+    &q=parentDocid_i:'+str(myStructId)+'&fq=valid_s:'+state+fl
     
     # print(url)
     r = requests.get(url)
@@ -34,7 +36,7 @@ def extractIncomingData():
         structDict[i]['docid'] = struct['docid'] 
         structDict[i]['nb'] = reqHal(struct['docid'])
 
-        #shortcur date format
+        #shortcut date format
         date = struct['updateDate_tdate']
         structDict[i]['date'] = date[ : date.index('T')]
         
