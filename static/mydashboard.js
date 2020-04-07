@@ -12,8 +12,8 @@ function display_noiseLevel(result) {
   document.getElementById("noiseLvl").innerHTML = noiseHtml
 
 
-  uvsqIncom = 'https://aurehal.archives-ouvertes.fr/structure/browse/critere/parentDocid_i%3A81173/solR/1/page/2/nbResultPerPage/50/tri/valid/filter/incoming/category/%2A'
-  uvsqValid = 'https://aurehal.archives-ouvertes.fr/structure/browse/critere/parentDocid_i%3A81173/solR/1/page/2/nbResultPerPage/50/tri/valid/filter/valid/category/%2A'         
+  uvsqIncom = 'https://aurehal.archives-ouvertes.fr/structure/browse/critere/parentDocid_i%3A81173/solR/1/page/1/nbResultPerPage/50/tri/valid/filter/incoming/category/%2A'
+  uvsqValid = 'https://aurehal.archives-ouvertes.fr/structure/browse/critere/parentDocid_i%3A81173/solR/1/page/1/nbResultPerPage/50/tri/valid/filter/valid/category/%2A'         
 
   incom =  '<a href="'+uvsqIncom+'" target="_blank">Entrantes</a>&emsp;'+ result['incoming']+'<br />'
   incom += '<a href="'+uvsqValid+'" target="_blank">Valides</a>&emsp;&emsp;' + result['valid']+'</a>'

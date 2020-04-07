@@ -12,7 +12,6 @@ def dashboard():
 
 @app.route('/calcNoiseLevel')
 def calcNoiseLevel(): 
-    
     incoming =  reqRefStruct('INCOMING')[0]
     valid =  reqRefStruct('VALID')[0]
   
@@ -21,7 +20,6 @@ def calcNoiseLevel():
     out = {
     'incoming':incoming, 'valid': valid, 'noiseLvl':noiseLvl
     }
-
     return out
     
 
