@@ -30,9 +30,9 @@ window.onload = function () {
         type: 'bar',
         showTooltips: false,
         data: {
-            labels: ['20 janv', '13 fev', '20 fev', '3 mars', '11 mars', '18 mars','25 mars','1 avril'],
+            labels: ['20 janv', '13 fev', '20 fev', '3 mars', '11 mars', '18 mars','25 mars','1 avril', '8 avril'],
             datasets: [{
-                data: [180, 159, 158, 156, 153, 166, 175, 115],
+                data: [180, 159, 158, 156, 153, 166, 175, 115, 90],
                 backgroundColor : "#e7c1f7",
                 borderWidth: 1
             }]
@@ -66,6 +66,7 @@ $.ajax({
     });
 
 function displayTable(result) {
+  console.log('script display table')
 
   google.charts.setOnLoadCallback(drawTable);
 
@@ -74,11 +75,13 @@ function displayTable(result) {
     data.addColumn('string', 'Structures entrantes');
     data.addColumn('string', 'Nb doc');
     data.addColumn('string', 'Last update');
+
     var url = '<a href="https://aurehal.archives-ouvertes.fr/structure/read/id/';
     var url2 = '<a href="https://hal.archives-ouvertes.fr/search/index/q/*/structId_i/'
+    //array syntaxe [name, docid, nbdoc, date]
     for (var key in result){
       data.addRows([
-        [ url+result[key]['docid']+'" target="_blank">'+result[key]['name']+'</a>', result[key]['nb'].toString(), result[key]['date'].toString() ]
+          [ url+result[key][1]+'" target="_blank">'+result[key][0]+'</a>', result[key][2].toString(), result[key][3].toString() ]
         ]);
 
     }
@@ -92,4 +95,4 @@ function displayTable(result) {
     table.draw(data, {allowHtml: true, showRowNumber: false, width: '100%', height: '100%'});
   }
 
- } // displayTable
+ }

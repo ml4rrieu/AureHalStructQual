@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template
-import json, requests
 from functions import *
 
 app = Flask(__name__)
