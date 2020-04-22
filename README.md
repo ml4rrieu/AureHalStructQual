@@ -5,5 +5,6 @@ Voir exemple [mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<
 ![snap](static/snapshot.png)
 
 ## todo
-Alimentation automatique de l'évolution du %
+un csv pour les données sur l'évolution
+afficher compteur structures OLD
  

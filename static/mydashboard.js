@@ -30,9 +30,9 @@ window.onload = function () {
         type: 'bar',
         showTooltips: false,
         data: {
-            labels: ['20 janv', '13 fev', '20 fev', '3 mars', '11 mars', '18 mars','25 mars','1 avril', '8 avril', '15 avril'],
+            labels: ['20 janv', '13 fev', '20 fev', '3 mars', '11 mars', '18 mars','25 mars','1 avril', '8 avril', '15 avril', '22 avril'],
             datasets: [{
-                data: [180, 159, 158, 156, 153, 166, 175, 115, 90, 64],
+                data: [180, 159, 158, 156, 153, 166, 175, 115, 90, 64, 32],
                 backgroundColor : "#e7c1f7",
                 borderWidth: 1
             }]
