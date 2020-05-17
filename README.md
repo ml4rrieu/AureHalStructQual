@@ -1,6 +1,7 @@
 # Qualité Referentiel Structure Hal
 Un dashboard en béta pour veiller à la qualité du Référentiel Hal Structure de son institution <br />
-Voir exemple pour l'UVSQ (2020-05) [mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<br />
+Voir exemple pour l'UVSQ (2020-05) <br />
+[mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<br />
 
 ![snap](static/snapshot.png)
 
@@ -14,8 +15,3 @@ Voir exemple pour l'UVSQ (2020-05) [mlarrieu.pythonanywhere.com](http://mlarrieu
 un csv pour les données sur l'évolution <br>
 afficher compteur structures OLD
 
-Voir aussi [github.com/RomBoistel/structurHAL](https://github.com/RomBoistel/structurHAL)
-
-
-
- 
