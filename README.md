@@ -1,6 +1,6 @@
 # Qualité Referentiel Structure Hal
-Un dashboard en béta pour veiller à la qualité du Référentiel Hal Structure de votre institution <br />
-Voir exemple [mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<br />
+Un dashboard en béta pour veiller à la qualité du Référentiel Hal Structure de son institution <br />
+Voir exemple pour l'UVSQ (2020-05) [mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<br />
 
 ![snap](static/snapshot.png)
 
@@ -10,11 +10,11 @@ Voir exemple [mlarrieu.pythonanywhere.com](http://mlarrieu.pythonanywhere.com/)<
 - l'évolution du niveau de bruit n'est pas récupérable, il faut avoir les données en amont
 - pas de responsive design
 
-Dans le même contexte voir aussi [github.com/RomBoistel/structurHAL](https://github.com/RomBoistel/structurHAL)
-
 ### todo (2020 04)
 un csv pour les données sur l'évolution <br>
 afficher compteur structures OLD
+
+Voir aussi [github.com/RomBoistel/structurHAL](https://github.com/RomBoistel/structurHAL)
 
 
 
